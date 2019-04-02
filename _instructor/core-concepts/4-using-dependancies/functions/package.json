@@ -1,0 +1,16 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  // WORKSHOP_START
+  "license": "MIT"
+  // WORKSHOP_END
+  // FINAL_START
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+  // FINAL_END
+}
