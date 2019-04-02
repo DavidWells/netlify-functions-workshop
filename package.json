@@ -1,0 +1,17 @@
+{
+  "name": "netlify-functions-workshop",
+  "version": "1.0.0",
+  "description": "Learn how to use Netlify functions",
+  "scripts": {
+    "docs": "node _scripts/docs.js",
+    "predocgen": "rm -rf lessons && rm -rf lessons-code-complete && npm run docs",
+    "docgen": "split-guide generate --templatesDir _instructor --exercisesDir lessons --exercisesFinalDir lessons-code-complete",
+    "postdocgen": "node _scripts/postDocs.js"
+  },
+  "author": "David Wells",
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-magic": "^0.1.21",
+    "split-guide-yml": "0.0.4"
+  }
+}

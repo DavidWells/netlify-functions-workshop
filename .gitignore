@@ -1,0 +1,5 @@
+# dependencies
+node_modules
+/wip
+.netlify
+.DS_store
