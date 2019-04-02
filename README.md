@@ -22,10 +22,10 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 **Repo directory structure:**
 
 ```
-|── lessons                 ✅ Work from these files!
-|── lessons-code-complete   💡 Complete lesson answers
-|── _instructor             🙈 Ignore these files. For instructor updates
-|── _scripts                🙈 Ignore these files
+|── /lessons                 ✅ Work from these files!
+|── /lessons-code-complete   💡 Complete lesson answers
+|── /_instructor             🙈 Ignore these files. For instructor updates
+|── /_scripts                🙈 Ignore these files
 ```
 
 ## Workshop Lessons
