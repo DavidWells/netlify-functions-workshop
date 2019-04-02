@@ -1,0 +1,10 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "author": "Netlify",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-lambda": "^2.4.8",
+    "graphql": "^14.1.1"
+  }
+}

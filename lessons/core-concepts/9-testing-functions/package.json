@@ -1,0 +1,16 @@
+{
+  "name": "9-testing-functions",
+  "version": "1.0.0",
+  "description": "In this tutorial we will cover how to test your serverless functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava **/*.test.js --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "node-fetch": "^2.3.0"
+  }
+}
