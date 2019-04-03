@@ -1,5 +1,4 @@
-
-# Using functions for web scraping
+# Using functions for sending text messages
 
 This lesson will walk through creating a function to send sms text messages via [Twilio](https://www.twilio.com/).
 

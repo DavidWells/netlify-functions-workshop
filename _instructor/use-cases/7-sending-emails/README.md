@@ -1,4 +1,4 @@
-# Using functions for Sending Email
+# Using functions for sending email
 
 This lesson will walk through creating a function to process payments via [Stripe](https://www.stripe.com/).
 
