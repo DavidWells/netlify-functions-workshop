@@ -16,7 +16,7 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
 
     The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. We need to create this site in Netlify
 
@@ -28,11 +28,55 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
 
     Choose manual deployments
 
-4. In `functions/set-cookie.js`, set `headers` key of the function response object.
+4. In `functions/set-cookie.js`, include the `cookie` npm module
 
-      Set the `"Location"` & `"Cache-Control"` headers to redirect the `GET` request to a new URL.
+    We will be using the [cookie](https://www.npmjs.com/package/cookie) module to set cookie headers in the response.
 
-5. After configuring your redirect, its time to deploy
+5. In `functions/set-cookie.js`, use the cookie module to generate a new cookie string
+
+      We will use the `cookie.serialize` method and set the `secure` option to `true`
+
+      Set `maxAge` to 2 weeks. Below is a helper function to set 2 week cookie life
+
+      ```js
+      const hour = 3600000
+      const twoWeeks = 14 * 24 * hour
+      ```
+
+6. In `functions/set-cookie.js`, choose a redirect URL to send visitors to after we set our cookie
+
+7. In `functions/set-cookie.js`, we will be using html meta refresh as our redirect mechanism
+
+    Because we are setting cookies from a `GET` request, we are returning back HTML to the browser to handle our final redirect.
+
+    ```js
+    const html = `
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <noscript>
+          <meta http-equiv="refresh" content="0; url=${redirectUrl}" />
+        </noscript>
+      </body>
+      <script>
+        setTimeout(function() {
+          window.location.href = ${JSON.stringify(redirectUrl)}
+        }, 0)
+      </script>
+    </html>`
+    ```
+
+8. In `functions/set-cookie.js`, return the response
+
+    Set the `statusCode` to 200
+
+    Set the `headers['Set-Cookie']` value to your cookie string value
+
+    Set the `headers['Content-Type']` to `'text/html'` and return our generated html in the `body`
+
+9. Its time to deploy!
 
     Open your terminal and run the following command:
 
@@ -40,11 +84,13 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
     netlify deploy -p
     ```
 
-6. Invoke the function to ensure it's working properly
+10. Invoke the function to ensure it's working properly
 
-    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/redirect
+    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/set-cookie
 
-    It should redirect you to a new location.
+    It should set a cookie in your browser and redirect you to a new location.
+
+    Open up your site homepage and verify the httpOnly cookie has been set via the browser developer tools.
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <!-- SCROLL UP FOR STEPS -->
@@ -66,7 +112,7 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
     Choose manual deployments
 -->
 
-<!-- Step 5. After configuring your redirect, its time to deploy
+<!-- Step 9. Its time to deploy!
 
     Open your terminal and run the following command:
 
@@ -75,11 +121,13 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
     ```
 -->
 
-<!-- Step 6. Invoke the function to ensure it's working properly
+<!-- Step 10. Invoke the function to ensure it's working properly
 
-    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/redirect
+    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/set-cookie
 
-    It should redirect you to a new location.
+    It should set a cookie in your browser and redirect you to a new location.
+
+    Open up your site homepage and verify the httpOnly cookie has been set via the browser developer tools.
 
 -->
 

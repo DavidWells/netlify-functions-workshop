@@ -1,0 +1,10 @@
+{
+  "name": "using-function-middleware",
+  "version": "1.0.0",
+  "description": "Using middy.js middleware in function",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "middy": "^0.24.0"
+  }
+}

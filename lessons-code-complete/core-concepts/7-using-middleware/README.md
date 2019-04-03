@@ -2,12 +2,16 @@
 
 In this lesson we will be covering how to use function middleware to re-use logic across multiple functions.
 
+We will be using [middy](https://www.npmjs.com/package/middy) for middleware.
+
+See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c68e03280e0fabecd279f482cd405a/docs/middlewares.md)
+
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
 
 ## Lesson Steps
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. Now deploy the `cors` enabled endpoint.
 

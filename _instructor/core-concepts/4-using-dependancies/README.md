@@ -14,7 +14,7 @@ This lesson will walk through creating a basic function using an `npm` module.
 
     The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. We need to create this site in Netlify
 
@@ -52,6 +52,8 @@ This lesson will walk through creating a basic function using an `npm` module.
     ```
 
     Your function should now be using the bundled npm dependencies when you invoke the function
+
+7. Invoke the function to ensure it's working properly
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <!-- SCROLL UP FOR STEPS -->
@@ -98,6 +100,7 @@ This lesson will walk through creating a basic function using an `npm` module.
     Your function should now be using the bundled npm dependencies when you invoke the function
 -->
 
+<!-- Step 7. Invoke the function to ensure it's working properly -->
 
 <!-- AUTO-GENERATED-CONTENT:START (README_BOTTOM) -->
 ## Complete code

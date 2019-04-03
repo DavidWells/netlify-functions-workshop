@@ -11,6 +11,8 @@ This lesson will walk through creating a function that will fetch data from thir
 
     The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
 
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
+
 3. We need to create this site in Netlify
 
     Open your terminal and run the following command:
@@ -31,7 +33,7 @@ This lesson will walk through creating a function that will fetch data from thir
 
 6. Invoke the function to ensure it's working properly
 
-    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/redirect
+    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/node-fetch
 
     It should redirect you to a new location.
 

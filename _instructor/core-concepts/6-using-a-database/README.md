@@ -11,23 +11,68 @@ In this lesson we will be covering how to use a database persistence layer with 
 ## Lesson Steps
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_LESSONS_STEPS)-->
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+1. Create a `netlify.toml` file in your project.
 
-3. Now deploy the `cors` enabled endpoint.
+    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
+
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
+
+3. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify init
+    ```
+
+    Choose manual deployments
+
+4. Choose the database type you would like to use
+
+    There are a number of examples in this lesson. See the functions folder for all of them.
+
+    Choose the database you want to work with
+
+4. Now deploy the function
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
     ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- Step 3. Now deploy the `cors` enabled endpoint.
+<!-- Step 1. Create a `netlify.toml` file in your project.
+
+    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
+
+-->
+
+<!-- Step 3. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify init
+    ```
+
+    Choose manual deployments
+-->
+
+<!-- Step 4. Choose the database type you would like to use
+
+    There are a number of examples in this lesson. See the functions folder for all of them.
+
+    Choose the database you want to work with
+    
+-->
+
+<!-- Step 4. Now deploy the function
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
     ```
 -->
 

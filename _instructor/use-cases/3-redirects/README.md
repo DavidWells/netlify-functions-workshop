@@ -16,7 +16,7 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
 
     The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. We need to create this site in Netlify
 
@@ -30,7 +30,11 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
 
 4. In `functions/redirect.js`, set `headers` key of the function response object.
 
-      Set the `"Location"` & `"Cache-Control"` headers to redirect the `GET` request to a new URL.
+      Set the `statusCode` to `302`.
+
+      Set the `headers['Location']` value to your redirect url.
+
+      Set the `headers['Cache-Control']` to `no-cache`. This will disable caching if we are using dynamic querystrings/paths to send people to different locations.
 
 5. After configuring your redirect, its time to deploy
 

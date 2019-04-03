@@ -12,7 +12,7 @@ This lesson will walk through protecting function endpoints
 
     The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. We need to create this site in Netlify
 
@@ -42,17 +42,7 @@ This lesson will walk through protecting function endpoints
 
   The `context.clientContext.user` data contains the claims of the user.
 
-5. Create `protected.js` and check
-
-    Open your terminal and run the following command:
-
-    ```bash
-    netlify addons:create fauna
-    ```
-
-    This will scaffold out a Fauna DB noSQL database for us to use in our functions
-
-
+6. Invoke the function to ensure it's working properly
 
 
 

@@ -16,7 +16,7 @@ We will be creating 2 lambda functions.
 
     The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. In `functions/hello-world.js`, Create a `200` response code and return the `event` data in the response body.
 

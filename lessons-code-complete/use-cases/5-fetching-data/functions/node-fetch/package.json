@@ -1,0 +1,11 @@
+{
+  "name": "fetching-external-data-via-node-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
+}

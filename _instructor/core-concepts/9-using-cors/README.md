@@ -20,7 +20,7 @@ This lesson will walk through creating an http function triggered by a `POST` re
 
     Set the `"Access-Control-Allow-Origin"` & `"Access-Control-Allow-Credentials"` headers.
 
-2. In `netlify.toml`, add a `[build]` section and add `publish` and `functions` values
+2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. Now deploy the `cors` enabled endpoint.
 
