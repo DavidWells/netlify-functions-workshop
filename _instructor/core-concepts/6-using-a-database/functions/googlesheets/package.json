@@ -1,0 +1,10 @@
+{
+  "name": "using-googlesheets-in-lambda",
+  "version": "1.0.0",
+  "description": "Persisting data in Google Spreadsheets via serverless function",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^38.0.0"
+  }
+}

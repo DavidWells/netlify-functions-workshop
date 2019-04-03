@@ -1,0 +1,10 @@
+{
+  "name": "using-airtable-in-lambda",
+  "version": "1.0.0",
+  "description": "Persisting data in Airtable via serverless function",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "airtable": "^0.5.8"
+  }
+}
