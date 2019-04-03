@@ -45,5 +45,5 @@ This lesson will walk through creating an http function triggered by a `POST` re
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/8-using-cors)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/9-using-cors)
 <!-- AUTO-GENERATED-CONTENT:END -->

@@ -6,6 +6,7 @@ This lesson will walk through creating a function to send sms text messages via 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
+- [Additional Resources](#additional-resources)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Lesson Steps
@@ -91,7 +92,7 @@ This lesson will walk through creating a function to send sms text messages via 
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/6-scraping)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/8-sending-sms)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Additional Resources

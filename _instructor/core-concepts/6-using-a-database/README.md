@@ -5,6 +5,7 @@ In this lesson we will be covering how to use a database persistence layer with 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
+- [Additional Resources](#additional-resources)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Lesson Steps
@@ -35,7 +36,7 @@ In this lesson we will be covering how to use a database persistence layer with 
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/7-using-middleware)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/6-using-a-database)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 

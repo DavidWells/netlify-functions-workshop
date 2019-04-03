@@ -134,5 +134,5 @@ In this tutorial we will cover how to test your serverless functions.
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/9-testing-functions)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/10-testing-functions)
 <!-- AUTO-GENERATED-CONTENT:END -->

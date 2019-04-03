@@ -1,0 +1,10 @@
+{
+  "name": "using-postgres-in-lambda",
+  "version": "1.0.0",
+  "description": "Persisting data in Postgres via serverless function",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^7.4.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "send-message-via-twilio",
+  "version": "1.0.0",
+  "description": "",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "twilio": "^3.30.0"
+  }
+}

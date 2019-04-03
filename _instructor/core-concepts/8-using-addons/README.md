@@ -78,5 +78,5 @@ We will be creating 2 lambda functions.
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/5-using-addons)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/8-using-addons)
 <!-- AUTO-GENERATED-CONTENT:END -->

@@ -1,0 +1,10 @@
+{
+  "name": "payment-processing-via-stripe",
+  "version": "1.0.0",
+  "description": "",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "stripe": "^6.28.0"
+  }
+}

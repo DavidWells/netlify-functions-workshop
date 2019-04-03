@@ -1,0 +1,10 @@
+{
+  "name": "send-email-via-sendgrid",
+  "version": "1.0.0",
+  "description": "",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/client": "^6.3.0"
+  }
+}

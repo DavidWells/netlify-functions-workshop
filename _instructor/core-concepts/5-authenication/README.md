@@ -5,6 +5,7 @@ This lesson will walk through protecting function endpoints
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
+- [Additional Resources](#additional-resources)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Lesson Steps
@@ -104,7 +105,7 @@ This lesson will walk through protecting function endpoints
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/6-authenication)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/5-authenication)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Additional Resources

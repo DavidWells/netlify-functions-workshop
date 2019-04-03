@@ -1,10 +1,12 @@
 /* Triggered when a split test is activated. */
-exports.handler = function(event, context, callback) {
+exports.handler = async (event, context) => {
   console.log('split-test-activated')
   console.log('event', event)
   console.log('context', context)
-  return callback(null, {
+  return {
     statusCode: 200,
-    body: "Hello, World"
-  })
+    body: JSON.stringify({
+      message: 'Hello, World'
+    })
+  }
 }
