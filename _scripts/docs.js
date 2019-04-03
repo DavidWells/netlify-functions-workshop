@@ -160,7 +160,15 @@ ${generateTable(examples)}
 function generateTable(examples) {
   let md = '| Lesson | Final Code  |\n'
   md += '|:--------------------------- |:-----|\n'
-  examples.forEach((example) => {
+
+  examples.sort((a, b) => {
+    // Sort the folders by correct number prefix
+    const baseOne = path.basename(path.dirname(a))
+    const baseTwo = path.basename(path.dirname(b))
+    const one = baseOne.match(/^[0-9]{1,3}/)[0]
+    const two = baseTwo.match(/^[0-9]{1,3}/)[0]
+    return one - two
+  }).forEach((example) => {
     console.log('hi', example)
 
     const contents = fs.readFileSync(example, 'utf8')

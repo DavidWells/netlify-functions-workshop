@@ -36,7 +36,6 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 | Lesson | Final Code  |
 |:--------------------------- |:-----|
 | [1 Hello World](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/1-hello-world) <br/> Deploying Your First Endpoint | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/1-hello-world)  |
-| [10 Testing Functions](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/10-testing-functions) <br/> Testing Serverless functions | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/10-testing-functions)  |
 | [2 Dynamic Content](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/2-dynamic-content) <br/> Rendering Dynamic Content | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/2-dynamic-content)  |
 | [3 Using Environment Variables](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/3-using-environment-variables) <br/> Using environment variables | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/3-using-environment-variables)  |
 | [4 Using Dependancies](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/4-using-dependancies) <br/> Using NPM dependencies | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/4-using-dependancies)  |
@@ -45,6 +44,7 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 | [7 Using Middleware](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/7-using-middleware) <br/> Using Function middleware | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/7-using-middleware)  |
 | [8 Using Addons](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/8-using-addons) <br/> Deploying Your First Endpoint | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/8-using-addons)  |
 | [9 Using Cors](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/9-using-cors) <br/> Adding CORS support | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/9-using-cors)  |
+| [10 Testing Functions](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/core-concepts/10-testing-functions) <br/> Testing Serverless functions | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/10-testing-functions)  |
 
 
 ### Use Cases
@@ -52,8 +52,6 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 | Lesson | Final Code  |
 |:--------------------------- |:-----|
 | [1 Rest Api](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/1-rest-api) <br/> Using functions for REST APIs | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/1-rest-api)  |
-| [10 Payment Processing](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/10-payment-processing) <br/> Using functions for Payment Processing | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/10-payment-processing)  |
-| [11 Handling Oauth](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/11-handling-oauth) <br/> Handing OAuth Flows | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/11-handling-oauth)  |
 | [2 Graphql](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/2-graphql) <br/> Using functions for GraphQL APIs | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/2-graphql)  |
 | [3 Redirects](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/3-redirects) <br/> Using functions for Dynamic Redirects | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/3-redirects)  |
 | [4 Setting Cookies](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/4-setting-cookies) <br/> Using functions for Dynamic Redirects | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/4-setting-cookies)  |
@@ -62,6 +60,8 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 | [7 Sending Emails](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/7-sending-emails) <br/> Using functions for Sending Email | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/7-sending-emails)  |
 | [8 Sending Sms](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/8-sending-sms) <br/>  | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/8-sending-sms)  |
 | [9 Event Driven Functions](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/9-event-driven-functions) <br/> Using Netlify Event Driven functions | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/9-event-driven-functions)  |
+| [10 Payment Processing](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/10-payment-processing) <br/> Using functions for Payment Processing | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/10-payment-processing)  |
+| [11 Handling Oauth](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/11-handling-oauth) <br/> Handing OAuth Flows | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/11-handling-oauth)  |
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
