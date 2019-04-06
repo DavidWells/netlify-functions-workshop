@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html>
+<head>
+  <script src="/assets/netlify-identity-widget.js"></script>
+  <link rel='stylesheet' href='/assets/style.css'/>
+  <meta charset="utf-8">
+  <title>Netlify Identity Widget</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="description" content="Netlify Identity Widget">
+  <meta name="application-name" content="Netlify Identity Widget">
+  <script>
+    // netlifyIdentity events
+    netlifyIdentity.on("init", user => console.log(user));
+    netlifyIdentity.on("login", user => console.log(user));
+    netlifyIdentity.on("logout", () => console.log("Logged out"));
+    netlifyIdentity.on("error", err => console.error("Logged out"));
+    netlifyIdentity.on("open", () => console.log("Widget opened"));
+    netlifyIdentity.on("close", () => console.log("Widget closed"));
+  </script>
+</head>
 
-  </body>
+<body>
+<div class="main">
+  <div class="header">
+    <h2><a href="https://www.netlify.com">Netlify Identity</a></h2>
+    <h1>Auth widget demo</h1>
+  </div>
+  <div class="hands-on-area">
+    <div class="single-button">
+      <span class="label">Single button example:</span>
+      <div data-netlify-identity-button=""></div>
+    </div>
+    <div class="multiple-buttons">
+      <span class="label">Multiple buttons example:</span>
+      <div data-netlify-identity-menu=""></div>
+    </div>
+  </div>
+  <div class="footer">
+    <h1>Serverless functions</h1>
+    <div class="button-wrapper">
+      <button class='netlify-button' id="open">Call open endpoint</button> <button class='netlify-button' id="protected">Call protected endpoint</button>
+    </div>
+    <div class="repo-link">
+      <a class="github-link" href="https://github.com/netlify/netlify-identity-widget">Open sourced on GitHub</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Get JWT token of current user
+  function generateHeaders() {
+    var headers = {
+      'Content-Type': 'application/json'
+    }
+    var user = netlifyIdentity.currentUser()
+    console.log('User', user)
+    if (user) {
+      return netlifyIdentity.currentUser().jwt().then((token) => {
+        console.log('User JWT', token)
+        if (token) {
+          headers['Authorization'] = `Bearer ${token}`
+        }
+        return headers
+      })
+    }
+    return Promise.resolve(headers)
+  }
+
+  function callProtectedEndpoint() {
+    return generateHeaders().then((authHeaders) => {
+      return fetch(`/.netlify/functions/protected`, {
+        method: 'POST',
+        headers: authHeaders,
+        body: JSON.stringify({
+          text: 'hi'
+        })
+      }).then((resp) => {
+        return resp.json()
+      }).then((data) => {
+        alert(JSON.stringify(data))
+      })
+    })
+  }
+
+  var openButton = document.getElementById('open')
+  openButton.addEventListener("click", function(e) {
+    e.preventDefault()
+    fetch(`/.netlify/functions/open`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        text: 'hi'
+      })
+    }).then((resp) => {
+      return resp.json()
+    }).then((data) => {
+      alert(JSON.stringify(data))
+    })
+  }, false)
+
+  var protectedButton = document.getElementById('protected')
+  protectedButton.addEventListener("click", function(e) {
+    e.preventDefault()
+    callProtectedEndpoint()
+  }, false)
+</script>
+
+</body>
 </html>
