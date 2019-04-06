@@ -19,10 +19,10 @@ This lesson will walk through creating a function to send sms text messages via 
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 5. After configuring your redirect, its time to deploy
 

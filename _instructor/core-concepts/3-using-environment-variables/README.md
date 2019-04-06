@@ -23,7 +23,7 @@ This lesson will teach you the basics of using environment variables in lambda f
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Login to your Netlify site
 

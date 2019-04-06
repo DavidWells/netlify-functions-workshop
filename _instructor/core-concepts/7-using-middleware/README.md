@@ -16,22 +16,194 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_LESSONS_STEPS)-->
 2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
-3. Now deploy the `cors` enabled endpoint.
+3. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy -p
+    netlify init --manual
     ```
+
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
+
+4. Navigate to the `functions` directory
+
+    Open your terminal and run the following command:
+
+    ```bash
+    npm init -y
+
+    # Then install middy
+    npm install middy
+    ```
+
+    This will install the `middy` npm module for us to use in the function
+
+5. In our function, the require `middy` module & implement
+
+  [See the middy usage docs](https://bit.ly/2VnK5gA)
+
+  Convert the `exports.handler` function and wrap it with `middy`
+
+  ```js
+  const middy = require('middy')
+  const businessLogic = (event, context, callback) => {
+    // do stuff
+  }
+  exports.handler = middy(businessLogic)
+  ```
+
+6. In our function, import the `jsonBodyParser` middleware & `.use` it
+
+  We also need to include a piece of middleware
+
+  ```js
+  const { jsonBodyParser } = require('middy/middlewares')
+  ```
+
+  The `jsonBodyParser` middleware will automatically `JSON.parse(event.body)` for us so we don't need to clutter up our function logic with this.
+
+  ```js
+  exports.handler = middy(businessLogic).use(jsonBodyParser())
+  ```
+
+  Inside your function's businessLogic you now can use the `body` object without parsing it.
+
+  ```js
+  const businessLogic = (event, context, callback) => {
+    console.log(typeof event.body) // object
+  }
+  ```
+
+7. In our function, let's implement our own custom middleware
+
+  [Middy middleware docs](https://bit.ly/2I1Lkiv)
+
+  ```js
+  const myMiddleware = (config) => {
+     We can supply config when we .use() this middleware 
+    return ({
+      before: (handler, next) => {
+        console.log('Before', handler)
+        next()
+      },
+      after: (handler, next) => {
+        console.log('After', handler)
+        next()
+      },
+      onError: (handler, next) => {
+        console.log('onError', handler)
+        next()
+      }
+    })
+  }
+  ```
+
+  Then apply it to our function.
+
+  ```js
+  exports.handler = middy(businessLogic)
+    .use(jsonBodyParser())
+    .use(myMiddleware({ foo: 'bar' }))
+  ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- Step 3. Now deploy the `cors` enabled endpoint.
+<!-- Step 3. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy -p
+    netlify init --manual
     ```
+
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
+-->
+
+<!-- Step 4. Navigate to the `functions` directory
+
+    Open your terminal and run the following command:
+
+    ```bash
+    npm init -y
+
+    # Then install middy
+    npm install middy
+    ```
+
+    This will install the `middy` npm module for us to use in the function
+-->
+
+<!-- Step 5. In our function, the require `middy` module & implement
+
+  [See the middy usage docs](https://bit.ly/2VnK5gA)
+
+  Convert the `exports.handler` function and wrap it with `middy`
+
+  ```js
+  const middy = require('middy')
+  const businessLogic = (event, context, callback) => {
+    // do stuff
+  }
+  exports.handler = middy(businessLogic)
+  ```
+-->
+
+<!-- Step 6. In our function, import the `jsonBodyParser` middleware & `.use` it
+
+  We also need to include a piece of middleware
+
+  ```js
+  const { jsonBodyParser } = require('middy/middlewares')
+  ```
+
+  The `jsonBodyParser` middleware will automatically `JSON.parse(event.body)` for us so we don't need to clutter up our function logic with this.
+
+  ```js
+  exports.handler = middy(businessLogic).use(jsonBodyParser())
+  ```
+
+  Inside your function's businessLogic you now can use the `body` object without parsing it.
+
+  ```js
+  const businessLogic = (event, context, callback) => {
+    console.log(typeof event.body) // object
+  }
+  ```
+
+-->
+
+<!-- Step 7. In our function, let's implement our own custom middleware
+
+  [Middy middleware docs](https://bit.ly/2I1Lkiv)
+
+  ```js
+  const myMiddleware = (config) => {
+    /* We can supply config when we .use() this middleware */
+    return ({
+      before: (handler, next) => {
+        console.log('Before', handler)
+        next()
+      },
+      after: (handler, next) => {
+        console.log('After', handler)
+        next()
+      },
+      onError: (handler, next) => {
+        console.log('onError', handler)
+        next()
+      }
+    })
+  }
+  ```
+
+  Then apply it to our function.
+
+  ```js
+  exports.handler = middy(businessLogic)
+    .use(jsonBodyParser())
+    .use(myMiddleware({ foo: 'bar' }))
+  ```
+
 -->
 
 <!-- AUTO-GENERATED-CONTENT:START (README_BOTTOM) -->

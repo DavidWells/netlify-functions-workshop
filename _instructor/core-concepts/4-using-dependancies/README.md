@@ -54,6 +54,8 @@ This lesson will walk through creating a basic function using an `npm` module.
     Your function should now be using the bundled npm dependencies when you invoke the function
 
 7. Invoke the function to ensure it's working properly
+
+    Ping the `https://{your-site-url}.netlify.com/.netlify/functions/using-npm-modules` endpoint and verify the response is returning a random name.
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <!-- SCROLL UP FOR STEPS -->

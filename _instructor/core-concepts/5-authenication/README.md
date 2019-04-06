@@ -37,7 +37,31 @@ This lesson will walk through protecting function endpoints
 
     This will pop open the site admin. Navigate to "identity" and enable identity.
 
-5. In `functions/protected.js`, check `context` for `clientContext.user`
+    The identity UI can be found at `https://app.netlify.com/sites/{your-site-slug}/identity`
+
+5. Now deploy the site & functions
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
+    ```
+
+6. Visit your site and create a user account
+
+    Open your site with the following command
+
+    ```bash
+    netlify open:site
+    ```
+
+    Click on "Sign up" and create an account.
+
+    Then verify your account with the email link.
+
+7. Now lets create our protected endpoint.
+
+  In the `functions/protected.js` function, we need to check `context` for `clientContext.user`
 
   The `context` parameter of a function contains information about where the function is running and a bunch of other information that is useful like auth info.
 
@@ -45,7 +69,25 @@ This lesson will walk through protecting function endpoints
 
   The `context.clientContext.user` data contains the claims of the user.
 
-6. Invoke the function to ensure it's working properly
+8. Deploy the site again
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
+    ```
+
+    The `https://{your-site}.netlify.com/.netlify/functions/open` function should be public
+
+    The `https://{your-site}.netlify.com/.netlify/functions/protected` function should return `'NOT ALLOWED'`
+
+9. Login to your user account
+
+    Then try the protected endpoint again.
+
+    You should see the data returning to the browser.
+
+    You can open up the console and see the `JWT` of the user. You can inspect the JWT at [JWT.io](https://jwt.io/)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <!-- SCROLL UP FOR STEPS -->
@@ -119,7 +161,15 @@ This lesson will walk through protecting function endpoints
 
 -->
 
-<!-- Step 9. Invoke the function to ensure it's working properly -->
+<!-- Step 9. Login to your user account
+
+    Then try the protected endpoint again.
+
+    You should see the data returning to the browser.
+
+    You can open up the console and see the `JWT` of the user. You can inspect the JWT at [JWT.io](https://jwt.io/)
+
+-->
 
 <!-- AUTO-GENERATED-CONTENT:START (README_BOTTOM) -->
 ## Complete code

@@ -1,10 +1,10 @@
 const middy = require('middy')
 const { jsonBodyParser } = require('middy/middlewares')
-
 const businessLogic = (event, context, callback) => {
-  // Do my custom stuff
+  console.log(typeof event.body) // object
+  /* Do my custom stuff */
   console.log('⊂◉‿◉つ')
-
+  /* return a response */
   return callback(null, {
     statusCode: 200,
     body: JSON.stringify({

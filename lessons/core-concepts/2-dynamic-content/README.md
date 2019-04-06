@@ -22,10 +22,10 @@ The pattern is used for dynamic server-side rendering in functions.
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Create a function to use path params to dynamically render back HTML
 

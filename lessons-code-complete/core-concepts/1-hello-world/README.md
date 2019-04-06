@@ -29,10 +29,10 @@ We will be creating 2 lambda functions.
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. After your handler is returning a response, it's time to deploy.
 

@@ -26,7 +26,7 @@ You can handle static redirects with [Netlify's redirect engine](https://www.net
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. In `functions/set-cookie.js`, include the `cookie` npm module
 

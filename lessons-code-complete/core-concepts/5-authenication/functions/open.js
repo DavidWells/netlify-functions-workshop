@@ -1,5 +1,5 @@
-
 /* Anyone can access this function */
+
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,

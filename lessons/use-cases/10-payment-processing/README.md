@@ -19,10 +19,10 @@ This lesson will walk through creating a function to process payments via [Strip
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 5. After configuring your redirect, its time to deploy
 
@@ -52,4 +52,5 @@ If you need help or get stuck refer to the completed code of this lesson
 
 ## Additional Resources
 
+- [E-commerce function examples](https://functions.netlify.com/examples?search=ecommerce)
 - [Stripe API docs](https://stripe.com/docs/charges)

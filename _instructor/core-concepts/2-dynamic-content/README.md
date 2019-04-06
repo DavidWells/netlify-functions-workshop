@@ -28,7 +28,7 @@ The pattern is used for dynamic server-side rendering in functions.
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Create a function to use path params to dynamically render back HTML
 

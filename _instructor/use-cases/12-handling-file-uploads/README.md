@@ -27,7 +27,7 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 5. After configuring your redirect, its time to deploy
 
@@ -86,7 +86,7 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/10-payment-processing)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/12-handling-file-uploads)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Additional Resources

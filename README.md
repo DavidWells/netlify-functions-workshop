@@ -11,6 +11,9 @@ This repo will teach you the [core concepts of using serverless functions](https
   * [Use Cases](#use-cases)
 - [Helpful Tools](#helpful-tools)
 - [Prerequisites & Setup Steps](#prerequisites--setup-steps)
+- [Additional Learning materials](#additional-learning-materials)
+  * [Netlify](#netlify)
+  * [Serverless](#serverless)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Using this repo
@@ -62,15 +65,10 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 | [9 Event Driven Functions](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/9-event-driven-functions) <br/> Using Netlify Event Driven functions | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/9-event-driven-functions)  |
 | [10 Payment Processing](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/10-payment-processing) <br/> Using functions for Payment Processing | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/10-payment-processing)  |
 | [11 Handling Oauth](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/11-handling-oauth) <br/> Handing OAuth Flows | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/11-handling-oauth)  |
+| [12 Handling File Uploads](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/12-handling-file-uploads) <br/> Using functions for Payment Processing | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/12-handling-file-uploads)  |
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
-
-## Resources
-
-- [Function Docs](https://www.netlify.com/docs/functions/)
-- [Function Examples](https://functions.netlify.com/examples)
-- [Function Tutorials](https://functions.netlify.com/tutorials)
 
 ## Helpful Tools
 
@@ -131,6 +129,14 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 
 
 ## Additional Learning materials
+
+### Netlify
+
+- [Function Docs](https://www.netlify.com/docs/functions/)
+- [Function Examples](https://functions.netlify.com/examples)
+- [Function Tutorials](https://functions.netlify.com/tutorials)
+
+### Serverless
 
 - [Applying the Serverless Mindset to Any Tech Stack](https://www.youtube.com/watch?v=8Rzv68K8ZOY)
 - [Serverless Architectural Patterns](https://medium.com/@eduardoromero/serverless-architectural-patterns-261d8743020)

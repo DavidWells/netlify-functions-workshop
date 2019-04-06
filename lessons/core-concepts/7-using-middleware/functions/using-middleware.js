@@ -1,10 +1,4 @@
-const middy = require('middy')
-const { jsonBodyParser } = require('middy/middlewares')
-
-const businessLogic = (event, context, callback) => {
-  // Do my custom stuff
-  console.log('⊂◉‿◉つ')
-
+exports.handler = (event, context, callback) => {
   return callback(null, {
     statusCode: 200,
     body: JSON.stringify({
@@ -12,23 +6,3 @@ const businessLogic = (event, context, callback) => {
     })
   })
 }
-
-const myMiddleware = (config) => {
-  // might set default options in config
-  return ({
-    before: (handler, next) => {
-      // might read options from `config`
-    },
-    after: (handler, next) => {
-      // might read options from `config`
-    },
-    onError: (handler, next) => {
-      // might read options from `config`
-    }
-  })
-}
-
-// Export the handler
-exports.handler = middy(businessLogic)
-  .use(jsonBodyParser())
-  .use(myMiddleware())

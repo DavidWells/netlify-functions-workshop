@@ -24,7 +24,7 @@ This lesson will walk through using functions as a GraphQL backend.
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Deploy the site
 

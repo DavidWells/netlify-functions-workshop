@@ -24,7 +24,7 @@ This lesson will walk through creating an http function triggered by a `POST` re
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 
 

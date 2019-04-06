@@ -25,7 +25,7 @@ In this lesson we will be covering how to use a database persistence layer with 
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Choose the database type you would like to use
 

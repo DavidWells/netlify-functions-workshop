@@ -24,7 +24,7 @@ This lesson will walk through creating a function that will fetch data from thir
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 5. After configuring your redirect, its time to deploy
 
