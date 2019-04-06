@@ -21,7 +21,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -30,7 +30,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 -->
 

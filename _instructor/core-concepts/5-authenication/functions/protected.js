@@ -1,4 +1,6 @@
-/* Step 5. In this_file, check `context` for `clientContext.user`
+/* Step 7. Now lets create our protected endpoint.
+
+  In the this_file function, we need to check `context` for `clientContext.user`
 
   The `context` parameter of a function contains information about where the function is running and a bunch of other information that is useful like auth info.
 

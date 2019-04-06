@@ -22,10 +22,10 @@ In this lesson we will be covering how to use a database persistence layer with 
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
 
 4. Choose the database type you would like to use
 
@@ -53,10 +53,10 @@ In this lesson we will be covering how to use a database persistence layer with 
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
 -->
 
 <!-- Step 4. Choose the database type you would like to use

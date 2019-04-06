@@ -21,17 +21,17 @@ In this tutorial we will cover how to test your serverless functions.
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Deploy the site and functions
 
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 
     The `foobar` function should be live on your new site
@@ -78,10 +78,10 @@ In this tutorial we will cover how to test your serverless functions.
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 -->
 
 <!-- Step 4. Deploy the site and functions
@@ -89,7 +89,7 @@ In this tutorial we will cover how to test your serverless functions.
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 
     The `foobar` function should be live on your new site

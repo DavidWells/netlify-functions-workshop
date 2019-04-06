@@ -66,9 +66,15 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+## Resources
+
+- [Function Docs](https://www.netlify.com/docs/functions/)
+- [Function Examples](https://functions.netlify.com/examples)
+- [Function Tutorials](https://functions.netlify.com/tutorials)
+
 ## Helpful Tools
 
-- [PostMan](https://www.getpostman.com/) - desktop app for quick & easy endpoint testing
+- [Postman](https://www.getpostman.com/) - desktop app for quick & easy endpoint testing
 - [NVM](https://github.com/creationix/nvm) - Node version manager
 
 ## Prerequisites & Setup Steps
@@ -122,3 +128,13 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 
 - Install [postman](https://www.getpostman.com/) for quick & easy testing of endpoints we deploy
 - It's also recommended that you use [nvm](https://github.com/creationix/nvm) (node version manager) just in case you need to change versions of node for the workshop.
+
+
+## Additional Learning materials
+
+- [Applying the Serverless Mindset to Any Tech Stack](https://www.youtube.com/watch?v=8Rzv68K8ZOY)
+- [Serverless Architectural Patterns](https://medium.com/@eduardoromero/serverless-architectural-patterns-261d8743020)
+- [Serverless Microservice Patterns for AWS](https://www.jeremydaly.com/serverless-microservice-patterns-for-aws/)
+- [Production-Ready Serverless](https://www.manning.com/livevideo/production-ready-serverless)
+- [JavaScript Cloud Native Development Cookbook](https://www.amazon.com/JavaScript-Cloud-Native-Development-Cookbook/dp/1788470419)
+- [Serverless framework workshop](https://github.com/DavidWells/serverless-workshop)

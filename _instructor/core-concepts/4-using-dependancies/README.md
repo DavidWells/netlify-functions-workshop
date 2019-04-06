@@ -21,10 +21,10 @@ This lesson will walk through creating a basic function using an `npm` module.
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Navigate to the `functions` directory
 
@@ -48,7 +48,7 @@ This lesson will walk through creating a basic function using an `npm` module.
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 
     Your function should now be using the bundled npm dependencies when you invoke the function
@@ -69,10 +69,10 @@ This lesson will walk through creating a basic function using an `npm` module.
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 -->
 
 <!-- Step 4. Navigate to the `functions` directory
@@ -94,13 +94,17 @@ This lesson will walk through creating a basic function using an `npm` module.
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 
     Your function should now be using the bundled npm dependencies when you invoke the function
 -->
 
-<!-- Step 7. Invoke the function to ensure it's working properly -->
+<!-- Step 7. Invoke the function to ensure it's working properly
+
+    Ping the `https://{your-site-url}.netlify.com/.netlify/functions/using-npm-modules` endpoint and verify the response is returning a random name.
+
+-->
 
 <!-- AUTO-GENERATED-CONTENT:START (README_BOTTOM) -->
 ## Complete code

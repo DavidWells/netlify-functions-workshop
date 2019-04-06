@@ -22,10 +22,10 @@ This lesson will walk through protecting function endpoints
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
 4. Login to Netlify and enable identity in the site
 
@@ -61,10 +61,10 @@ This lesson will walk through protecting function endpoints
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 -->
 
 <!-- Step 4. Login to Netlify and enable identity in the site
@@ -77,9 +77,49 @@ This lesson will walk through protecting function endpoints
 
     This will pop open the site admin. Navigate to "identity" and enable identity.
 
+    The identity UI can be found at `https://app.netlify.com/sites/{your-site-slug}/identity`
+
 -->
 
-<!-- Step 6. Invoke the function to ensure it's working properly -->
+<!-- Step 5. Now deploy the site & functions
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
+    ```
+
+-->
+
+<!-- Step 6. Visit your site and create a user account
+
+    Open your site with the following command
+
+    ```bash
+    netlify open:site
+    ```
+
+    Click on "Sign up" and create an account.
+
+    Then verify your account with the email link.
+
+-->
+
+<!-- Step 8. Deploy the site again
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
+    ```
+
+    The `https://{your-site}.netlify.com/.netlify/functions/open` function should be public
+
+    The `https://{your-site}.netlify.com/.netlify/functions/protected` function should return `'NOT ALLOWED'`
+
+-->
+
+<!-- Step 9. Invoke the function to ensure it's working properly -->
 
 <!-- AUTO-GENERATED-CONTENT:START (README_BOTTOM) -->
 ## Complete code
@@ -91,4 +131,6 @@ If you need help or get stuck refer to the completed code of this lesson
 
 ## Additional Resources
 
+- [Netlify identity demo](https://identity.netlify.com/)
+- [Netlify identity docs](https://www.netlify.com/docs/identity/)
 - [Using Netlify Identity in a production application](https://auspicus.io/post/using-netlify-identity-in-a-production-application/#abilitytocreateaccountsprogrammatically)

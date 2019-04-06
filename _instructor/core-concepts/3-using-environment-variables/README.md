@@ -20,10 +20,10 @@ This lesson will teach you the basics of using environment variables in lambda f
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
 
 4. Login to your Netlify site
 
@@ -48,7 +48,7 @@ This lesson will teach you the basics of using environment variables in lambda f
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 
 7. Verify the environment variables are set by invoking your function
@@ -75,10 +75,10 @@ This lesson will teach you the basics of using environment variables in lambda f
     Open your terminal and run the following command:
 
     ```bash
-    netlify init
+    netlify init --manual
     ```
 
-    Choose manual deployments
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
 -->
 
 <!-- Step 4. Login to your Netlify site
@@ -98,7 +98,7 @@ This lesson will teach you the basics of using environment variables in lambda f
     Open your terminal and run the following command:
 
     ```bash
-    netlify deploy
+    netlify deploy -p
     ```
 -->
 
