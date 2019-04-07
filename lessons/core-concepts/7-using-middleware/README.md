@@ -104,6 +104,39 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
     .use(myMiddleware({ foo: 'bar' }))
   ```
 
+8. Now deploy the site & functions
+
+    Open your terminal and run the following command:
+
+    ```bash
+    netlify deploy -p
+    ```
+
+9. Verify the function is working
+
+    Invoke the functions to verify they are returning the environment values
+
+    Open your terminal and run the following command:
+
+    ```bash
+    curl -X GET https://your-site-url.netlify.com/.netlify/functions/using-middleware
+    ```
+
+    Or visit the URL in your browser.
+
+    Open your site admin and visit the function logs. Verify your `console.log` is logging data
+
+10. Bonus: Add the `validator` middleware
+
+    [Validator middleware docs](https://github.com/middyjs/middy/blob/master/docs/middlewares.md#validator)
+
+    The validator middleware will ensure the data into your function matches the correct shape.
+
+    You can also validate the response out of the function.
+
+
+
+
 
 
 

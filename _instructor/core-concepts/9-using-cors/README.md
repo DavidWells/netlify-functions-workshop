@@ -16,11 +16,9 @@ This lesson will walk through creating an http function triggered by a `POST` re
 ## Lesson Steps
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_LESSONS_STEPS)-->
-2. In `functions/using-cors.js`, set `headers` key of the function response object.
+1. In `functions/using-cors.js`, set `headers` key of the function response object.
 
     Set the `"Access-Control-Allow-Origin"` & `"Access-Control-Allow-Credentials"` headers.
-
-2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
 
 3. Now deploy the `cors` enabled endpoint.
 
@@ -28,6 +26,18 @@ This lesson will walk through creating an http function triggered by a `POST` re
 
     ```bash
     netlify deploy -p
+    ```
+
+4. Test your CORS enabled endpoint
+
+    You should now be able to make ajax requests from other sites to ping this function
+
+    ```js
+    fetch(`https://your-site-url.com/.netlify/functions/using-cors`, {
+      method: 'POST',
+    }).then(response => {
+      return response.json()
+    })
     ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -37,6 +47,19 @@ This lesson will walk through creating an http function triggered by a `POST` re
 
     ```bash
     netlify deploy -p
+    ```
+-->
+
+<!-- Step 4. Test your CORS enabled endpoint
+
+    You should now be able to make ajax requests from other sites to ping this function
+
+    ```js
+    fetch(`https://your-site-url.com/.netlify/functions/using-cors`, {
+      method: 'POST',
+    }).then(response => {
+      return response.json()
+    })
     ```
 -->
 

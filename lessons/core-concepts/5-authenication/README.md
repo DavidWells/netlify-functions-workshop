@@ -102,6 +102,7 @@ If you need help or get stuck refer to the completed code of this lesson
 
 ## Additional Resources
 
+- [Serverless Auth strategies](https://github.com/DavidWells/serverless-auth-strategies)
 - [Netlify identity demo](https://identity.netlify.com/)
 - [Netlify identity docs](https://www.netlify.com/docs/identity/)
 - [Using Netlify Identity in a production application](https://auspicus.io/post/using-netlify-identity-in-a-production-application/#abilitytocreateaccountsprogrammatically)

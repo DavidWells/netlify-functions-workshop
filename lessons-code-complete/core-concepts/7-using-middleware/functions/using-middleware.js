@@ -1,5 +1,6 @@
 const middy = require('middy')
 const { jsonBodyParser } = require('middy/middlewares')
+
 const businessLogic = (event, context, callback) => {
   console.log(typeof event.body) // object
   /* Do my custom stuff */

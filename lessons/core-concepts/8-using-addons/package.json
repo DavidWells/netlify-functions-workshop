@@ -1,0 +1,14 @@
+{
+  "name": "using-addons",
+  "version": "1.0.0",
+  "description": "Using netlify addons",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "setup": "node ./scripts/setup-schema.js"
+  },
+  "dependencies": {
+    "faunadb": "^2.6.1"
+  }
+}

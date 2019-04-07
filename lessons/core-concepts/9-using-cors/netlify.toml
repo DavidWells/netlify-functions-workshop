@@ -1,1 +1,3 @@
-# Step 2. In this_file, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values #
+[build]
+  publish = "site"
+  functions = "functions"

@@ -1,5 +1,5 @@
 // WORKSHOP_START
-/* Step 2. In this_file, set `headers` key of the function response object.
+/* Step 1. In this_file, set `headers` key of the function response object.
 
     Set the `"Access-Control-Allow-Origin"` & `"Access-Control-Allow-Credentials"` headers.
 */
