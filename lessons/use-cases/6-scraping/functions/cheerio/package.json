@@ -2,7 +2,7 @@
   "name": "cheerio-function",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",

@@ -7,7 +7,7 @@
     "test": "ava **/*.test.js --verbose"
   },
   "keywords": [],
-  "author": "",
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
   "license": "MIT",
   "devDependencies": {
     "ava": "^1.4.1",

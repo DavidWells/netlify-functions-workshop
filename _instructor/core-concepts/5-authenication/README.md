@@ -3,10 +3,17 @@
 This lesson will walk through protecting function endpoints
 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
+- [Auth Options](#auth-options)
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
 - [Additional Resources](#additional-resources)
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Auth Options
+
+Let's run through the list of different options for serverless [serverless auth](https://github.com/DavidWells/serverless-auth-strategies)
+
+Then we will implement authenication using [Netlify identity](https://identity.netlify.com/)
 
 ## Lesson Steps
 

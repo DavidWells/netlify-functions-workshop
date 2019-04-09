@@ -4,19 +4,15 @@ This lesson will walk through using functions as a GraphQL backend.
 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
 - [Lesson Steps](#lesson-steps)
+- [Alternative implementations](#alternative-implementations)
+- [Additional resources](#additional-resources)
 - [Complete code](#complete-code)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Lesson Steps
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_LESSONS_STEPS)-->
-1. Create a `netlify.toml` file in your project.
-
-    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
-
-2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
-
-3. We need to create this site in Netlify
+1. Create this site in Netlify
 
     Open your terminal and run the following command:
 
@@ -26,24 +22,54 @@ This lesson will walk through using functions as a GraphQL backend.
 
     Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
-4. Deploy the site
+2. Install our graphQL dependencies
+
+    Change directories into our functions folder and create new package.json
+
+    ```bash
+    cd functions && npm init -y
+    ```
+
+    Now install the `apollo-server-lambda` npm package
+
+    ```bash
+    npm install apollo-server-lambda
+    ```
+
+3. In `functions/graphql.js`, require 'apollo-server-lambda'
+
+4. In `functions/graphql.js`, define your graphQL types
+
+5. In `functions/graphql.js`, define your graphQL resolvers
+
+6. In `functions/graphql.js`, create a new `ApolloServer` and pass it your typeDefs and resolves
+
+7. In `functions/graphql.js`, turn your server into a lambda compatible function signature
+
+    ```js
+    server.createHandler()
+    ```
+
+    Then export the handler
+
+8. Deploy the site
 
     Open your terminal and run the following command:
 
     ```bash
     netlify deploy -p
     ```
+
+    Open the frontend and test your new graphQL endpoint
+
+    ```
+    netlify open:site
+    ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <!-- SCROLL UP FOR STEPS -->
 
-<!-- Step 1. Create a `netlify.toml` file in your project.
-
-    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
-
--->
-
-<!-- Step 3. We need to create this site in Netlify
+<!-- Step 1. Create this site in Netlify
 
     Open your terminal and run the following command:
 
@@ -51,18 +77,48 @@ This lesson will walk through using functions as a GraphQL backend.
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 -->
 
-<!-- Step 4. Deploy the site
+<!-- Step 2. Install our graphQL dependencies
+
+    Change directories into our functions folder and create new package.json
+
+    ```bash
+    cd functions && npm init -y
+    ```
+
+    Now install the `apollo-server-lambda` npm package
+
+    ```bash
+    npm install apollo-server-lambda
+    ```
+
+  -->
+
+<!-- Step 8. Deploy the site
 
     Open your terminal and run the following command:
 
     ```bash
     netlify deploy -p
     ```
+
+    Open the frontend and test your new graphQL endpoint
+
+    ```
+    netlify open:site
+    ```
 -->
 
+## Alternative implementations
+
+- [AWS Appsync](https://docs.aws.amazon.com/appsync/index.html)
+- [Prisma](https://www.prisma.io/)
+
+## Additional resources
+
+- [The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
 
 <!-- AUTO-GENERATED-CONTENT:START (README_BOTTOM) -->
 ## Complete code

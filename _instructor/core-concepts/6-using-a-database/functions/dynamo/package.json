@@ -4,6 +4,6 @@
   "description": "Persisting data in DynamoDB via serverless function",
   "author": "David Wells",
   "keywords": [],
-  "author": "",
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
   "license": "MIT"
 }

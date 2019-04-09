@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "",
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.3.0"

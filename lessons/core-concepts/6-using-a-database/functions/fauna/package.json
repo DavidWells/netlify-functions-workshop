@@ -4,7 +4,7 @@
   "description": "Persisting data in FaunaDB via serverless function",
   "author": "David Wells",
   "keywords": [],
-  "author": "",
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
   "license": "MIT",
   "dependencies": {
     "faunadb": "^2.6.1"

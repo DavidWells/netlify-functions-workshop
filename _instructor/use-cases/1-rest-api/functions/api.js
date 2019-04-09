@@ -1,9 +1,16 @@
 const api = require('./methods')
+// WORKSHOP_START
+/* Step 5. In this_file, we are going to setup our API router
+
+    Use the `event.path` & `event.httpMethod` to determine how to handle the request
+*/
+// WORKSHOP_END
 
 exports.handler = async (event, context) => {
   const path = event.path.replace(/\.netlify\/functions\/[^/]+/, '')
   const segments = path.split('/').filter(e => e)
 
+  // FINAL_START
   switch (event.httpMethod) {
     case 'GET':
       /* GET /.netlify/functions/api */
@@ -52,4 +59,5 @@ exports.handler = async (event, context) => {
         body: 'unrecognized HTTP Method, must be one of GET/POST/PUT/DELETE'
       }
   }
+  // FINAL_END
 }

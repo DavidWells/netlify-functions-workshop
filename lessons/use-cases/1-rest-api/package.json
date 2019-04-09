@@ -1,0 +1,14 @@
+{
+  "name": "rest-apis",
+  "version": "1.0.0",
+  "description": "Using netlify addons",
+  "keywords": [],
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
+  "license": "MIT",
+  "scripts": {
+    "setup": "netlify dev:exec node ./scripts/setup-schema.js"
+  },
+  "dependencies": {
+    "faunadb": "^2.6.1"
+  }
+}
