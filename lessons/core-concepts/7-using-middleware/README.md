@@ -11,9 +11,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
 
 ## Lesson Steps
 
-2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
-
-3. We need to create this site in Netlify
+1. Create the site in Netlify
 
     Open your terminal and run the following command:
 
@@ -23,7 +21,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
 
     Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
-4. Navigate to the `functions` directory
+2. Navigate to the `functions` directory
 
     Open your terminal and run the following command:
 
@@ -36,7 +34,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
 
     This will install the `middy` npm module for us to use in the function
 
-5. In our function, the require `middy` module & implement
+3. In our function, the require `middy` module & implement
 
   [See the middy usage docs](https://bit.ly/2VnK5gA)
 
@@ -50,7 +48,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
   exports.handler = middy(businessLogic)
   ```
 
-6. In our function, import the `jsonBodyParser` middleware & `.use` it
+4. In our function, import the `jsonBodyParser` middleware & `.use` it
 
   We also need to include a piece of middleware
 
@@ -72,7 +70,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
   }
   ```
 
-7. In our function, let's implement our own custom middleware
+6. In our function, let's implement our own custom middleware
 
   [Middy middleware docs](https://bit.ly/2I1Lkiv)
 
@@ -104,7 +102,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
     .use(myMiddleware({ foo: 'bar' }))
   ```
 
-8. Now deploy the site & functions
+7. Now deploy the site & functions
 
     Open your terminal and run the following command:
 
@@ -112,7 +110,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
     netlify deploy -p
     ```
 
-9. Verify the function is working
+8. Verify the function is working
 
     Invoke the functions to verify they are returning the environment values
 
@@ -126,7 +124,7 @@ See [full list of middlewares](https://github.com/middyjs/middy/blob/ba65c55578c
 
     Open your site admin and visit the function logs. Verify your `console.log` is logging data
 
-10. Bonus: Add the `validator` middleware
+9. Bonus: Add the `validator` middleware
 
     [Validator middleware docs](https://github.com/middyjs/middy/blob/master/docs/middlewares.md#validator)
 

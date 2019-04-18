@@ -11,13 +11,7 @@ In this lesson we will be covering how to use a database persistence layer with 
 ## Lesson Steps
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_LESSONS_STEPS)-->
-1. Create a `netlify.toml` file in your project.
-
-    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
-
-2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
-
-3. We need to create this site in Netlify
+1. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
@@ -27,13 +21,13 @@ In this lesson we will be covering how to use a database persistence layer with 
 
     Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
-4. Choose the database type you would like to use
+2. Choose the database type you would like to use
 
     There are a number of examples in this lesson. See the functions folder for all of them.
 
     Choose the database you want to work with
 
-4. Now deploy the function
+3. Now deploy the function
 
     Open your terminal and run the following command:
 
@@ -42,13 +36,7 @@ In this lesson we will be covering how to use a database persistence layer with 
     ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- Step 1. Create a `netlify.toml` file in your project.
-
-    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
-
--->
-
-<!-- Step 3. We need to create this site in Netlify
+<!-- Step 1. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
@@ -56,18 +44,18 @@ In this lesson we will be covering how to use a database persistence layer with 
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 -->
 
-<!-- Step 4. Choose the database type you would like to use
+<!-- Step 2. Choose the database type you would like to use
 
     There are a number of examples in this lesson. See the functions folder for all of them.
 
     Choose the database you want to work with
-    
+
 -->
 
-<!-- Step 4. Now deploy the function
+<!-- Step 3. Now deploy the function
 
     Open your terminal and run the following command:
 

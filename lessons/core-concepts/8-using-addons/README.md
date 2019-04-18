@@ -14,13 +14,7 @@ We will be creating 2 lambda functions.
 
 ## Lesson Steps
 
-1. Create a `netlify.toml` file in your project.
-
-    The `netlify.toml` file is where we configure how the site builds and where your serverless functions live.
-
-2. In `netlify.toml`, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values
-
-3. We need to create this site in Netlify
+1. We need to create this site in Netlify
 
     Open your terminal and run the following command:
 
@@ -30,7 +24,7 @@ We will be creating 2 lambda functions.
 
     Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
-4. Lets add our first add-on
+2. Lets add our first add-on
 
     Open your terminal and run the following command:
 
@@ -40,7 +34,7 @@ We will be creating 2 lambda functions.
 
     This will scaffold out a Fauna DB noSQL database for us to use in our functions.
 
-5. Create the fauna schema!
+3. Create the fauna schema!
 
     In order to use our fauna database we need to setup a data schema for it to use.
 
@@ -70,7 +64,7 @@ We will be creating 2 lambda functions.
     export FAUNADB_SERVER_SECRET=YourValue
     ```
 
-6. Install the function dependencies
+4. Install the function dependencies
 
     Change directories into your functions folder and install the dependencies
 
@@ -80,7 +74,7 @@ We will be creating 2 lambda functions.
 
     This will install the `fauandb` sdk our functions will use to talk to our database
 
-7. Deploy the site
+5. Deploy the site
 
     Open your terminal and run the following command:
 
@@ -88,7 +82,7 @@ We will be creating 2 lambda functions.
     netlify deploy -p
     ```
 
-8. Visit your site
+6. Visit your site
 
     ```bash
     netlify open:site
@@ -96,12 +90,11 @@ We will be creating 2 lambda functions.
 
     You should have a working todo application!
 
-9. Optionally try the one click install
+7. Optionally try the one click install
 
     Visit [https://github.com/netlify/fauna-one-click](https://github.com/netlify/fauna-one-click) and click the "Deploy to Netlify" button
 
     This will automatically setup our site + repo and the fauna add-on
-
 
 
 

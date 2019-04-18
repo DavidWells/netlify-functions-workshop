@@ -1,8 +1,6 @@
-# Using functions for Dynamic Redirects
+# Using functions to set cookies
 
-This lesson will walk through creating a function that will handle dynamic redirects.
-
-You can handle static redirects with [Netlify's redirect engine](https://www.netlify.com/docs/redirects/) but sometimes we need the ability to handle dynamic redirects based on the request. Serverless functions are a perfect fit for this type of functionality.
+This lesson will walk through using functions to set browser cookies.
 
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
