@@ -1,6 +1,8 @@
 # Using functions for sending email
 
-This lesson will walk through creating a function to process payments via [Stripe](https://www.stripe.com/).
+This lesson will walk through creating a function to send emails.
+
+There are two examples: [Mailgun](./functions/mailgun) & [Sendgrid](./functions/sendgrid)
 
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)

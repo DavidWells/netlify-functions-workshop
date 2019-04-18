@@ -1,6 +1,8 @@
 # Using functions for sending email
 
-This lesson will walk through creating a function to process payments via [Stripe](https://www.stripe.com/).
+This lesson will walk through creating a function to send emails.
+
+There are two examples: [Mailgun](./functions/mailgun) & [Sendgrid](./functions/sendgrid)
 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
 - [Lesson Steps](#lesson-steps)
@@ -58,7 +60,7 @@ This lesson will walk through creating a function to process payments via [Strip
     netlify init --manual
     ```
 
-    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you. 
+    Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 -->
 
 <!-- Step 5. After configuring your redirect, its time to deploy
