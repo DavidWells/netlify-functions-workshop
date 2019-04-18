@@ -1,4 +1,4 @@
-# Using functions for Payment Processing
+# Using functions for uploading files
 
 This lesson will walk through creating a function to get pre-signed s3 upload urls.
 
