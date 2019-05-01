@@ -1,8 +1,6 @@
-# Using functions for uploading files
+# Using functions for returning images
 
-This lesson will walk through creating a function to get pre-signed s3 upload urls.
-
-Pre-signed upload urls can be used for users to upload profile images and a variety of other user cases.
+This lesson will walk through creating a function to return an image instead of `json`.
 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
 - [Lesson Steps](#lesson-steps)
@@ -38,9 +36,9 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
 
 6. Invoke the function to ensure it's working properly
 
-    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/redirect
+    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/return-image?fileURL={IMAGE URL HERE}
 
-    It should redirect you to a new location.
+    It should return a binary of your image
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <!-- SCROLL UP FOR STEPS -->
@@ -73,9 +71,9 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
 
 <!-- Step 6. Invoke the function to ensure it's working properly
 
-    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/redirect
+    Visit your site and the URL https://your-site-url.netlify.com/.netlify/functions/return-image?fileURL={IMAGE URL HERE}
 
-    It should redirect you to a new location.
+    It should return a binary of your image
 
 -->
 
@@ -85,5 +83,5 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
 
 If you need help or get stuck refer to the completed code of this lesson
 
-[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/12-handling-file-uploads)
+[View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/13-returning-dynamic-images)
 <!-- AUTO-GENERATED-CONTENT:END -->

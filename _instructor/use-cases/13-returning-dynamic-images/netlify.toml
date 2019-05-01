@@ -1,0 +1,8 @@
+# WORKSHOP_START
+# Step 2. In this_file, add a `[build]` section and add `publish = "site"` and `functions = "functions"` values #
+# WORKSHOP_END
+# FINAL_START
+[build]
+  publish = "site"
+  functions = "functions"
+# FINAL_END

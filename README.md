@@ -66,6 +66,7 @@ If you get stuck or want to look ahead checkout the [**lessons-code-complete**](
 | [10 Payment Processing](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/10-payment-processing) <br/> Using functions for Payment Processing | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/10-payment-processing)  |
 | [11 Handling Oauth](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/11-handling-oauth) <br/> Handing OAuth Flows | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/11-handling-oauth)  |
 | [12 Handling File Uploads](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/12-handling-file-uploads) <br/> Using functions for uploading files | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/12-handling-file-uploads)  |
+| [13 Returning Dynamic Images](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons/use-cases/13-returning-dynamic-images) <br/> Using functions for returning images | [Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/13-returning-dynamic-images)  |
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->

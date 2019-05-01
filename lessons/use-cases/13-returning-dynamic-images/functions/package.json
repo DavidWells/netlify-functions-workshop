@@ -1,0 +1,10 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "hello",
+  "author": "David Wells",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}

@@ -6,7 +6,6 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
 
 - [Lesson Steps](#lesson-steps)
 - [Complete code](#complete-code)
-- [Additional Resources](#additional-resources)
 
 ## Lesson Steps
 
@@ -51,7 +50,3 @@ Pre-signed upload urls can be used for users to upload profile images and a vari
 If you need help or get stuck refer to the completed code of this lesson
 
 [View Complete Code](https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/12-handling-file-uploads)
-
-## Additional Resources
-
-- [Stripe API docs](https://stripe.com/docs/charges)
