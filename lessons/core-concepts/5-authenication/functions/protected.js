@@ -9,7 +9,7 @@
   The `context.clientContext.user` data contains the claims of the user.
 */
 exports.handler = async (event, context) => {
-  console.log('Check event for clientContext.user')
+  console.log('Check context for clientContext.user')
   return {
     statusCode: 200,
     body: JSON.stringify({
